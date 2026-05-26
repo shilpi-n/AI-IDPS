@@ -1,0 +1,66 @@
+# ============================================================
+#  AI-IDPS — .gitignore
+# ============================================================
+
+# --- Python bytecode / cache ---
+# Auto-regenerated at runtime; never commit compiled files.
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Secrets / credentials ---
+.env
+.env.*
+secrets.yaml
+config.local.py
+
+# --- Trained model binaries ---
+# window_model.pkl is ~1.7 MB — handled via Git LFS (see .gitattributes).
+# Remove this rule only after Git LFS is configured.
+# models/*.pkl
+
+# --- Runtime-generated logs ---
+# Logs can contain real IP addresses; never commit them.
+logs/
+*.log
+
+# --- Dataset Excel duplicates ---
+# Only CSVs are needed; .xlsx copies add ~440 KB for nothing.
+dataset/*.xlsx
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Build artifacts ---
+dist/
+build/
+*.egg-info/
+
+# --- Misc temp files ---
+*.tmp
+*.bak
+*.swp

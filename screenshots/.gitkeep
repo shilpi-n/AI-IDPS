@@ -1,0 +1,5 @@
+Place output screenshots here.
+
+Run `python src/visualizer.py` to auto-generate:
+  - confusion_matrix.png
+  - packet_rate_distribution.png
